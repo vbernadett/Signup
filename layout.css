@@ -1,0 +1,162 @@
+/**
+ * TARTALOMJEGYZÉK
+ *
+ * ELRENDEZÉS
+ * Elemek.................Magukra a containerekre vonatkozó méretszabályok.
+ * Módosítók..............Az elrendezést módosító szabályok, pl. floatok.
+ *
+ * TÉRKÖZÖK
+ * Vízszintes térközök....Containerek közötti vízszintes whitespace szabályai.
+ *
+ * HELPEREK
+ * Clearfix...............Floatolt containerekre hívható class.
+ * Background-color...............Segítő színek a konténerek meghatározásához
+ */
+
+
+/*====================ELRENDEZÉS=====================*/
+
+/*========================BODY====================*/
+
+.left_coloumn_layout{
+  width: 50%;
+  height: 87.5%;
+  float: left;
+  background-color: #6200EA;
+}
+
+.right_coloumn_layout{
+  width: 50%;
+  height: 87.5%;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*a background háttere fekete-fehér, azért hogy ez a szabály már ne érvényesüljön a background fölött lévő konténereken, használjuk a .module class-ban leírtakat*/
+
+.module{
+  position: relative;
+}
+.module::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background-image: url(signup/bailey-zindel-396398-unsplash.jpg);
+  background-size: cover;
+  filter: grayscale(100%);
+}
+
+/*a bal oldalo konténeren ezzel a css szabállyal helyezzük középre vertikálisan is az elemeket*/
+
+.layout_headline{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*a bal oldali fehér konténer méreteit állítjuk itt be és az abban szereplő unput boxokat és gombokat*/
+
+.layout_signin_box{
+  position: absolute;
+  width: 67.5%;
+  height: 67.5%;
+  background-color: #FFFFFF;
+  border-radius: .9375rem;
+  padding-top: 11%;
+  padding-left: 11%;
+  padding-bottom: 12.05%;
+  padding-right: 11%;
+}
+
+.layout_first_line{
+  width: 100%;
+  height: 24.1%;
+  margin-bottom: 7.2%;
+}
+
+input[type=text], select{
+  width: 100%;
+  height: 12.05%;
+  display: inline-block;
+  background-color: #F4F3F5;
+  color: #211138;
+  cursor: auto;
+  border-style: none;
+  padding: 1rem;
+  opacity: 25%;
+}
+
+.input_email{
+  display: inline-block;
+  margin-bottom: .9375rem;
+}
+
+/*ez a szabály segít abban, hogy az input boxba beleállva az alsó keret kék legyen*/
+
+input:focus{
+  outline-style: none;
+  border-bottom: 2px solid #6200EA;
+  border-bottom-width: medium;
+  opacity: 100%;
+}
+
+.layout_password_box{
+  width: 100%;
+  height: 3.6%;
+  margin-bottom: 7.23%;
+  color: #6200EA;
+  opacity: 100%;
+  font-size: .75rem;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+.layout_button_box{
+  width: 100%;
+  height: 12.05%;
+  margin-bottom: 3.6%;
+  background-color: #6200EA;
+  border: 2px solid #6200EA;
+  border-radius: 1.5rem;
+  color: #FFFFFF;
+  display: inline-block;
+  padding-top: .78rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: .75rem;
+}
+
+.white_button{
+  background-color: #FFFFFF;
+}
+
+/*====================FOOTER====================*/
+
+.footer_layout{
+  width: 100%;
+  height: 12.5%;
+  background-color: #211138;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  padding-top: 2.6875rem;
+}
+
+/*=================SEGÉD BEÁLLÍTÁSOK===========*/
+
+.float_left {float: left;}
+
+.float_right {float: right;}
+
+/*=====================HELPEREK=====================*/
+

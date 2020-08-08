@@ -1,0 +1,59 @@
+/**
+ * TARTALOMJEGYZÉK
+ *
+ * BEÁLLÍTÁSOK
+ * Box-sizing...........Az oldalunk globális alapbeállításai.
+ * Base font-size.......Az alap betűméret deklarálása.
+ * Anchor...............A linkek alapértelmezett beállításai.
+ *
+ * TIPOGRÁFIA
+ * Headingek, linkek és gombok............Tipográfiai stílusok.
+ */
+
+
+/*==================BEÁLLÍTÁSOK===================*/
+
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  background-color: aqua;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1{
+  font-size: 1.625rem;
+  color: #211138;
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.blue a{
+  color: #6200EA;
+}
+
+p{
+  color: #B2ACBA;
+  font-size: .75rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+span{
+  color: #6200EA;
+}
+
+
+

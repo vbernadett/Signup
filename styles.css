@@ -1,0 +1,68 @@
+/**
+ * TARTALOMJEGYZÉK
+ *
+ * 1. GOMBOK
+ *
+ * 2. FEJLÉC
+ *
+ * 3. NAVIGÁCIÓ
+ *
+ * 4. POSZT
+ *
+ * 5. LÁBLÉC
+ */
+
+
+/*====================2.FEJLÉC===================*/
+
+.logo_image{
+  display: inline-block;
+  padding-left: 1.875rem;
+  padding-top: .9375rem;
+  padding-bottom: .9375rem;
+}
+
+
+/*====================4.POSZT=====================*/
+
+.headline{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul{
+  text-align: center;
+}
+
+li{
+  display: block;
+  font-size: 1.875rem;
+  color: #FFFFFF;
+  margin-bottom: 3.9375rem;
+}
+
+.opacity{
+  opacity: 25%;
+}
+
+.white{
+  background-color: #FFFFFF;
+}
+
+/*===================5.LÁBLÉC=====================*/
+
+.wrapper{
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.footer{
+  position: absolute;
+  background-color: #211138;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 100vw;
+}
